@@ -101,7 +101,7 @@ class RRT:
                 while(True):
                     rand_x=int(np.round(np.random.uniform(2,self.size_row-3)))  #generating a list of points randomly from a unifrom distribution for x and y
                     rand_y=int(np.round(np.random.uniform(3,self.size_col-3)))
-                    if(self.newobsmap[rand_x][rand_y]==0):                     #If the coordinates picked are obstacles in the map array then we have our first point
+                    if(self.newobsmap[rand_x][rand_y]==1):                     #If the coordinates picked are obstacles in the map array then we have our first point
                         break
                     
                 while(True):                                      #While loop runs until we find viable coordinates for the second point
@@ -344,7 +344,7 @@ class RRT:
             if(self.start not in valid):
                 valid.append(self.start)
 
-            replan = self.RRT_star(500,100,valid,prevmap)
+            replan = self.RRT_star(400,100,valid,prevmap)
 
         if(replan==None):
             return None
