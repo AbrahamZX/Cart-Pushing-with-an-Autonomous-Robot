@@ -14,48 +14,48 @@ Once a ROS workspace has been created, download this Github repository with what
 3. Navigate to the scripts folder within a terminal or open a terminal on this folder if using the gui ("pr2_tc_description/scripts").
 
 4. Make the following files executable using the command "chmod +x file_name.py" like so:
-  ```
-  chmod +x controller.py 
-  ```
-  ```
-  chmod +x pr2_teleop_bridge.py
-  ```
-  ```
-  chmod +x D_star-Comparison/dstar_main.py 
-  ```
-  ```
-  chmod +x RRT+Replanning+RRN/rrt_main.py
-  ```
+```
+chmod +x controller.py 
+```
+```
+chmod +x pr2_teleop_bridge.py
+```
+```
+chmod +x D_star-Comparison/dstar_main.py 
+```
+```
+chmod +x RRT+Replanning+RRN/rrt_main.py
+```
   
 4. Navigate to the ROS workspace folder (usually "catkin_ws") in the terminal and run the following commands to build and source the directory:
-  ```
-  catkin_make
-  ```
-  ```
-  source devel/setup.bash
-  ```
+```
+catkin_make
+```
+```
+source devel/setup.bash
+```
   
 5. Now the setup has been completed and to run the gazebo simulation at least four terminals need to be open.
 
 7. On the first three terminals execute the following commands:
-   ```
-   roscore
-   ```
-   ```
-   roslaunch pr2_tc_description main.launch
-   ```
-   ```
-   rosrun pr2_tc_description controller.py
-   ```
+```
+roscore
+```
+```
+roslaunch pr2_tc_description main.launch
+```
+```
+rosrun pr2_tc_description controller.py
+```
    
 8. All that's left is to navigate to "catkin_ws/src/pr2_tc_description/scripts" on the fourth terminal and choose whether to plan with Modified MRRT* or D*. For Modified MRRT* execute the following command:
-  ```
-  python3 RRT+Replanning+RRN/rrt_main.py
-  ```
+```
+python3 RRT+Replanning+RRN/rrt_main.py
+```
 For D* execute the following command:
-  ```
-  python3 D_star-Comparison/dstar_main.py
-  ```
+```
+python3 D_star-Comparison/dstar_main.py
+```
 
 8. To run a new simulation, terminate all terminal commands, except the one runnning roscore, by using the 'Ctrl+C' keys on each terminal. Then repeat steps 7 and 8.
 
