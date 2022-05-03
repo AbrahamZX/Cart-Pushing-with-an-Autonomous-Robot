@@ -28,8 +28,8 @@ def load_map(file_path, resolution_scale):
 
 if __name__ == "__main__":
     # Load the map
-    grid, start, goal = load_map('D_star-Comparison/floor_plan.jpg',0.5)
-    dynamic_grid, _, _ = load_map('D_star-Comparison/floor_plan_dynamic3.jpg',0.5)
+    grid, start, goal = load_map('floor_plan.jpg',0.5)
+    dynamic_grid, _, _ = load_map('floor_plan_dynamic3.jpg',0.5)
     # grid, start, goal = load_map('map2.csv')
     # dynamic_grid, _, _ = load_map('dynamic_map2.csv')
     # grid, start, goal = load_map('map3.csv')
