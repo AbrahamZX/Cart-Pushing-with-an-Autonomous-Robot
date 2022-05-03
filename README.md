@@ -28,21 +28,35 @@ Once a ROS workspace has been created, download this Github repository with what
   ```
   
 4. Navigate to the ROS workspace folder (usually "catkin_ws") in the terminal and run the following commands to build and source the directory:
+  ```
   catkin_make
+  ```
+  ```
   source devel/setup.bash
+  ```
   
 5. Now the setup has been completed and to run the gazebo simulation at least four terminals need to be open.
 
 7. On the first three terminals execute the following commands:
+   ```
    roscore
+   ```
+   ```
    roslaunch pr2_tc_description main.launch
+   ```
+   ```
    rosrun pr2_tc_description controller.py
+   ```
    
 8. All that's left is to navigate to "catkin_ws/src/pr2_tc_description/scripts" on the fourth terminal and choose whether to plan with Modified MRRT* or D*. For Modified MRRT* execute the following command:
+  ```
   python3 RRT+Replanning+RRN/rrt_main.py
+  ```
 For D* execute the following command:
+  ```
   python3 D_star-Comparison/dstar_main.py
+  ```
 
-8. To run a new simulation, terminate all terminal commands, except the one runnning roscore, by using the Ctrl+C keys on each terminal. Then repeat steps 7 and 8.
+8. To run a new simulation, terminate all terminal commands, except the one runnning roscore, by using the 'Ctrl+C' keys on each terminal. Then repeat steps 7 and 8.
 
 To run the motion planners in their 2D form, simply navigate to the other downloaded folders on a terminal: to run the Modified MRRT* execute "python3 main.py" on the RRT+Replanning+RRN folder and to run the D* execute "python3 main.py" on the D_star-Comparison folder.
