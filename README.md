@@ -9,7 +9,7 @@ http://wiki.ros.org/noetic/Installation/Ubuntu
 
 Once a ROS workspace has been created, download this Github repository with whatever method is desired and follow the following steps to be able to run Gazebo simulations:
 
-1. After the repository has been downloaded, copy/move the pr2_tc_description folder to the src folder in the ROS workspace folder (usually "catkin_ws/src").
+1. After the repository has been downloadeded and extracted, copy/move the pr2_tc_description folder to the src folder in the ROS workspace folder (usually "catkin_ws/src").
 
 3. Navigate to the scripts folder within a terminal or open a terminal on this folder if using the gui ("pr2_tc_description/scripts").
 
