@@ -344,7 +344,7 @@ class RRT:
             if(self.start not in valid):
                 valid.append(self.start)
 
-            replan = self.RRT_star(400,100,valid,prevmap)
+            replan = self.RRT_star(500,100,valid,prevmap)
 
         if(replan==None):
             return None
