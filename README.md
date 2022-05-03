@@ -13,11 +13,19 @@ Once a ROS workspace has been created, download this Github repository with what
 
 3. Navigate to the scripts folder within a terminal or open a terminal on this folder if using the gui ("pr2_tc_description/scripts").
 
-4. Make the following files executable using the command "chmod +x file_name.py" like so: 
+4. Make the following files executable using the command "chmod +x file_name.py" like so:
+  ```
   chmod +x controller.py 
+  ```
+  ```
   chmod +x pr2_teleop_bridge.py
+  ```
+  ```
   chmod +x D_star-Comparison/dstar_main.py 
+  ```
+  ```
   chmod +x RRT+Replanning+RRN/rrt_main.py
+  ```
   
 4. Navigate to the ROS workspace folder (usually "catkin_ws") in the terminal and run the following commands to build and source the directory:
   catkin_make
