@@ -43,9 +43,9 @@ if __name__ == "__main__":
     #start = (110, 40)
     #goal  = (30, 250)
 
-    #map_array = load_map("RRT+Replanning+RRN/floor_plan.jpg", 0.3)
-    map_array = load_map("RRT+Replanning+RRN/floor_plan.jpg", 0.5)
-    #map_array = load_map("RRT+Replanning+RRN/floor_plan.jpg", 0.8)
+    #map_array = load_map("floor_plan.jpg", 0.3)
+    map_array = load_map("floor_plan.jpg", 0.5)
+    #map_array = load_map("floor_plan.jpg", 0.8)
 
     # Planning class
     RRT_planner = RRT(map_array, start, goal)
@@ -54,10 +54,10 @@ if __name__ == "__main__":
     # Search with RRT and RRT*
     x=RRT_planner.RRT_star(n_pts=10000)
     
-    #map_array = load_map("RRT+Replanning+RRN/floor_plan_dynamic3.jpg", 0.3)
-    map_array = load_map("RRT+Replanning+RRN/floor_plan_dynamic3.jpg", 0.5)
+    #map_array = load_map("floor_plan_dynamic3.jpg", 0.3)
+    map_array = load_map("floor_plan_dynamic3.jpg", 0.5)
     start = (100, 180)
-    #map_array = load_map("RRT+Replanning+RRN/floor_plan_dynamic3.jpg", 0.8)
+    #map_array = load_map("floor_plan_dynamic3.jpg", 0.8)
     RRT_planner = RRT(map_array, start, goal)
     RRT_planner.replanner(x[0],x[1],x[2])
 
