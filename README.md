@@ -57,6 +57,6 @@ For D* execute the following command:
 python3 D_star-Comparison/dstar_main.py
 ```
 
-8. To run a new simulation, terminate all terminal commands, except the one runnning roscore, by using the 'Ctrl+C' keys on each terminal. Then repeat steps 7 and 8.
+9. To run a new simulation, terminate all terminal commands, except the one runnning roscore, by using the 'Ctrl+C' keys on each terminal. Then repeat steps 7 and 8.
 
 To run the motion planners in their 2D form, simply navigate to the other downloaded folders on a terminal: to run the Modified MRRT* execute "python3 main.py" on the RRT+Replanning+RRN folder and to run the D* execute "python3 main.py" on the D_star-Comparison folder.
